@@ -3,12 +3,12 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 8000;; 
-// app.use(cors());
-app.use(cors({
-  origin: 'https://64d1eecba66f7f3809540035--vocal-flan-918e24.netlify.app/',
-  credentials: true,
-  exposedHeaders: ['Authorization']
-}));
+app.use(cors());
+// app.use(cors({
+//   origin: 'https://64d1eecba66f7f3809540035--vocal-flan-918e24.netlify.app/',
+//   credentials: true,
+//   exposedHeaders: ['Authorization']
+// }));
 
 app.use(express.json());
 
